@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MyStyle</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <nav class="bg-white border-[#FFECC894] pb-2 border-b-2">
@@ -41,33 +41,24 @@
             </svg>
             <span class="sr-only">Search</span>
           </button>
-          <div class="relative hidden md:block">
-            <div
-              class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
-            >
-              <svg
-                class="w-4 h-4 text-gray-500 400"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-                />
-              </svg>
-              <span class="sr-only">Search icon</span>
+          <div class="flex space-x-6">
+            <a href="cart.html" class="relative flex flex-col items-center cursor-pointer">
+              <span class="text-3xl mb-1 text-black">⏍</span>
+              <span class="text-sm text-black mt-1">Cart</span>
+            </a>
+            <a class="relative flex flex-col items-center cursor-pointer">
+              <span class="text-3xl mb-1 text-black">♡</span>
+              <span class="text-sm text-black mt-1">Wish List</span>
+            </a>
+
+            <div class="flex flex-col items-center cursor-pointer">
+              <img
+                src="https://via.placeholder.com/40"
+                alt="Profile"
+                class="w-10 h-10 mb-0.5 rounded-full border"
+              />
+              <span class="text-sm text-black mt-1">Account</span>
             </div>
-            <input
-              type="text"
-              id="search-navbar"
-              class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus: focus:bo 0 y-600 r-gray-4"
-              placeholder="Search..."
-            />
           </div>
           <button
             data-collapse-toggle="navbar-search"
@@ -130,7 +121,7 @@
           >
             <li>
               <a
-                href="#"
+                href="index.html"
                 class="block py-2 px-3 text-[#4B3B30] rounded-sm md:bg-transparent md:te md:p-0 md:500"
                 aria-current="page"
                 >Home</a
@@ -138,21 +129,21 @@
             </li>
             <li>
               <a
-                href="viewproduct.html"
+                href="about.html"
                 class="block py-2 px-3 text-black rounded-sm hover:text-[#4B3B30] md:hover:bg-transparent md:hover:te md:p-0 ray-700 -white md:ransparent y-700"
                 >About</a
               >
             </li>
             <li>
               <a
-                href="detailproduct.html"
+                href="viewproduct.html"
                 class="block py-2 px-3 text-black rounded-sm hover:text-[#4B3B30] md:hover:bg-transparent md:hover:te md:p-0 ray-700 -white md:ransparent y-700"
-                >Services</a
+                >Collections</a
               >
             </li>
             <li>
               <a
-                href="#"
+                href="detailproduct.html"
                 class="block py-2 px-3 text-black rounded-sm hover:text-[#4B3B30] md:hover:bg-transparent md:hover:te md:p-0 ray-700 -white md:ransparent y-700"
                 >Product</a
               >
@@ -163,9 +154,9 @@
     </nav>
 
     <section class="bg-white container mx-auto">
-      <div class="pt-24 pb-44 mx-auto text-center">
-        <img class="absolute w-28" src="Images/hero1.png">
-        <img class="absolute w-36 right-36" src="Images/hero2.png">
+      <div class="pt-20 pb-44 mx-auto text-center">
+        <img class="absolute w-28" src="Images/hero1.png" />
+        <img class="absolute w-36 right-36" src="Images/hero2.png" />
         <div class="max-w-lg mx-auto">
           <h1
             class="font-stretch-expanded text-6xl tracking-wide leading-16 font-semibold text-black"
@@ -184,14 +175,17 @@
       </div>
     </section>
 
-    <section class="container mx-auto">
+    <section class="container mx-auto" id="about">
       <h1
         class="text-4xl font-stretch-expanded tracking-wide leading-11 font-semibold text-black"
       >
         What are the <br />
         advantages of our choice?
       </h1>
-      <img class="absolute right-40 top-[1000px] w-48" src="Images/circle.png">
+      <img
+        class="absolute right-40 top-[1000px] w-48"
+        src="Images/circle.png"
+      />
       <div
         class="bg-white drop-shadow-xl rounded-4xl p-24 flex space-x-20 mt-12"
       >
@@ -271,7 +265,10 @@
           </p>
         </div>
       </div>
-      <img class="absolute top-[1380px] left-10 -z-10 w-32" src="Images/circle2.png">
+      <img
+        class="absolute top-[1380px] left-10 -z-10 w-32"
+        src="Images/circle2.png"
+      />
     </section>
 
     <section class="container mx-auto py-44">
@@ -305,7 +302,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
               <a
-                href="viewproduct.html"
+                href="detailproduct.html"
                 class="flex mt-6 items-center justify-center w-32 mx-auto px-6 py-2 text-white duration-300 bg-[#4B3B30] rounded-lg hover:bg-[#403026] focus:ring focus:ring-blue-300 focus:ring-opacity-80"
               >
                 Buy Now
@@ -337,7 +334,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
               <a
-                href="viewproduct.html"
+                href="detailproduct.html"
                 class="flex mt-6 items-center justify-center w-32 mx-auto px-6 py-2 text-white duration-300 bg-[#4B3B30] rounded-lg hover:bg-[#403026] focus:ring focus:ring-blue-300 focus:ring-opacity-80"
               >
                 Buy Now
@@ -369,7 +366,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
               <a
-                href="viewproduct.html"
+                href="detailproduct.html"
                 class="flex mt-6 items-center justify-center w-32 mx-auto px-6 py-2 text-white duration-300 bg-[#4B3B30] rounded-lg hover:bg-[#403026] focus:ring focus:ring-blue-300 focus:ring-opacity-80"
               >
                 Buy Now
@@ -401,7 +398,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
               <a
-                href="viewproduct.html"
+                href="detailproduct.html"
                 class="flex mt-6 items-center justify-center w-32 mx-auto px-6 py-2 text-white duration-300 bg-[#4B3B30] rounded-lg hover:bg-[#403026] focus:ring focus:ring-blue-300 focus:ring-opacity-80"
               >
                 Buy Now
@@ -433,7 +430,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
               <a
-                href="viewproduct.html"
+                href="detailproduct.html"
                 class="flex mt-6 items-center justify-center w-32 mx-auto px-6 py-2 text-white duration-300 bg-[#4B3B30] rounded-lg hover:bg-[#403026] focus:ring focus:ring-blue-300 focus:ring-opacity-80"
               >
                 Buy Now
@@ -465,7 +462,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
               <a
-                href="viewproduct.html"
+                href="detailproduct.html"
                 class="flex mt-6 items-center justify-center w-32 mx-auto px-6 py-2 text-white duration-300 bg-[#4B3B30] rounded-lg hover:bg-[#403026] focus:ring focus:ring-blue-300 focus:ring-opacity-80"
               >
                 Buy Now
@@ -494,10 +491,10 @@
 
         <div class="inline-flex w-full mt-6 sm:w-auto">
           <a
-            href="#"
+            href="viewproduct.html"
             class="inline-flex items-center justify-center w-full px-6 py-2 text-white duration-300 bg-[#4B3B30] rounded-lg hover:bg-[#403026] focus:ring focus:ring-blue-300 focus:ring-opacity-80"
           >
-            Sign Up
+            View Product
           </a>
         </div>
       </div>
@@ -527,6 +524,12 @@
             />
             <div id="pembungkus">
               <p>Man</p>
+              <a
+                href="viewproduct.html"
+                class="px-6 py-2 text-white duration-300 bg-[#4B3B30] rounded-lg hover:bg-[#403026]"
+              >
+                See Collections
+              </a>
             </div>
           </div>
         </div>
@@ -538,6 +541,12 @@
             />
             <div id="pembungkus">
               <p>Woman</p>
+              <a
+                href="viewproduct.html"
+                class="px-6 py-2 text-white duration-300 bg-[#4B3B30] rounded-lg hover:bg-[#403026]"
+              >
+                See Collections
+              </a>
             </div>
           </div>
         </div>
@@ -549,6 +558,12 @@
             />
             <div id="pembungkus">
               <p>Kids</p>
+              <a
+                href="viewproduct.html"
+                class="px-6 py-2 text-white duration-300 bg-[#4B3B30] rounded-lg hover:bg-[#403026]"
+              >
+                See Collections
+              </a>
             </div>
           </div>
         </div>
@@ -595,7 +610,6 @@
             >
               Privacy
             </a>
-
           </div>
         </div>
 
