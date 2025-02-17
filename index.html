@@ -53,8 +53,6 @@
               class="flex flex-col items-center cursor-pointer"
             >
               <img
-                src="Images/adyvkapp.jpeg"
-                alt="Profile"
                 class="w-10 h-10 mb-0.5 object-cover rounded-full border"
               />
               <span class="text-sm text-black mt-1">Account</span>
@@ -153,13 +151,13 @@
       </div>
     </nav>
 
-    <section class="bg-white container mx-auto">
+    <section class="bg-white min-[1300px]:container mx-auto">
       <div class="pt-20 pb-44 mx-auto text-center">
-        <img class="absolute w-28" src="Images/hero1.png" />
-        <img class="absolute w-36 right-36" src="Images/hero2.png" />
+        <img class="absolute lg:w-28 md:w-24 max-[768px]:hidden lg:left-36 md:left-10" src="Images/hero1.png" />
+        <img class="absolute lg:w-36 md:w-24 max-[768px]:hidden lg:right-36 md:right-10" src="Images/hero2.png" />
         <div class="max-w-lg mx-auto">
           <h1
-            class="font-stretch-expanded text-6xl tracking-wide leading-16 font-semibold text-black"
+            class="font-stretch-expanded text-6xl max-[767px]:text-5xl tracking-wide max-[767px]:leading-14 font-semibold text-black"
           >
             Find your <br />
             best outift
@@ -168,7 +166,7 @@
 
         <div class="flex justify-center mt-20">
           <img
-            class="object-cover w-full h-96 rounded-xl"
+            class="object-cover lg:w-full md:w-7/8 max-[768px]:w-[650px] rounded-xl"
             src="Images/hero.png"
           />
         </div>
@@ -177,13 +175,13 @@
 
     <section class="container mx-auto" id="about">
       <h1
-        class="text-4xl font-stretch-expanded tracking-wide leading-11 font-semibold text-black"
+        class="lg:text-4xl md:text-4xl max-[768px]:text-2xl font-stretch-expanded tracking-wide leading-11 font-semibold text-black"
       >
         What are the <br />
         advantages of our choice?
       </h1>
       <img
-        class="absolute right-40 top-[1000px] w-48"
+        class="absolute right-40 top-[1060px] w-48"
         src="Images/circle.png"
       />
       <div
@@ -266,7 +264,7 @@
         </div>
       </div>
       <img
-        class="absolute top-[1380px] left-10 -z-10 w-32"
+        class="absolute top-[1450px] left-10 -z-10 w-32"
         src="Images/circle2.png"
       />
     </section>
